@@ -1,0 +1,605 @@
+html,body{
+    margin: 0;
+    overflow-x: hidden;
+    box-sizing: border-box;
+}
+    /* ------------------- Global Classes -----------------*/
+
+a{
+    text-decoration: none;
+}
+.flex-row{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+ul{
+    list-style-type: none;
+}
+h1{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 2.5rem;
+}
+h2{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+h3{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif ;
+    font-size: 1.7rem;
+}
+button.btn{
+    border: none;
+    border-radius: 2rem;
+    padding: 1rem 3rem;
+    font-size: 1.4rem;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: white;
+    cursor: pointer;
+    background: #088178;
+}
+span{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.container{
+    margin: 0 5vw;
+}
+.text-gray{
+    color: gray;
+}
+p{
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: light;
+    text-align: justify;
+}
+
+
+
+    /* -----------X--------- Global Classes ----------X---------*/
+
+    /*------------------- navigation -------------------*/
+.nav{
+    background:  rgba(135, 203, 138, 0.976);
+    padding: 0 2rem;
+    height: 0rem;
+    min-height: 13vh;
+    overflow: hidden;
+    transition: height 1s ease-in-out;
+}
+.nav .nav-menu{
+    justify-content:space-between;
+}
+.nav .nav-brand a{
+    font-size: 1.6rem;
+    padding: 1rem 0;
+    display: block;
+    transition: 0.5s;
+}
+.nav .nav-brand a:hover{
+    transform: scale(1.3);
+}
+.nav .toggle-collapse{
+    position: absolute;
+    top: 0;
+    width: 90%;
+    cursor: pointer;
+    display: none;
+}
+.nav .toggle-collapse .toggle-icon{
+    display: flex;
+    justify-content: flex-end;
+    padding: 1.7rem 0;
+}
+.collapse{
+    height: 34rem;
+}
+.nav .toggle-collaps .toggle-icon i{
+    font-size: 1.4rem;
+    color: rgb(83, 76, 77);
+}
+.nav .nav-items{
+    display: flex;
+    margin: 0;
+}
+.nav .nav-items .nav-link{
+    padding: 1.6rem 1rem;
+    font-size: 1.1rem;
+    position: relative;
+
+}
+a.home{
+    background: green;
+    color: rgb(255, 255, 255) !important;
+    border-radius: 6px;
+}
+a.wome:hover{
+    color: black !important;
+    background-color: rgba(167, 147, 147, 0.0) !important;
+}
+.nav .nav-items .nav-link a{
+    color: black;
+    transition: .5s ease-in-out;
+    padding: 15px 0.7rem;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.nav .nav-items .nav-link a:hover{
+    background-color:green;
+    border-radius: 6px;
+    color: rgb(255, 255, 255);
+}
+.search{
+    padding: 1.6rem 1rem;
+    font-size: 1.1rem;
+}
+.search a{
+    padding: 13px 0.7rem;
+    transition: .5s ease-in-out;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.search a:hover{
+    color: rgb(255, 255, 255);
+    background-color: green;
+    border-radius: 4px;
+}
+
+.userl{
+    background-color: green !important;
+    color: white !important;
+    border-radius: 5px;
+}
+.userl:hover{
+    background-color: rgba(167, 147, 147, 0.0) !important;
+    color: rgb(99, 104, 178) !important;
+}
+    /*----------X------------ Navigation -----------X-----------*/
+
+    /* ----------------------- Main content ----------------------*/
+
+main .site-title{
+    background: url('image/banner9.png');
+    background-size: cover;
+    height: 110vh;
+    display: flex;
+    justify-content: center;
+}
+main .site-title .site-background{
+    padding-top: 12rem;
+    text-align: center;
+    color: rgb(255, 255, 255);
+}
+main .site-title h3, main .site-title h1{
+    margin: 0.3rem;
+    text-shadow: 4px 6px 5px rgb(0, 0, 0);
+}
+main .site-title h3{
+    text-shadow: 2px 4px 5px rgb(0, 0, 0);
+}
+main .site-title .btn{
+    margin: 1.8rem;
+    background: #088178;
+}
+main .site-title .btn:hover{
+    background: transparent;
+    border: 1px solid #cce7d0;
+}
+/*---------------------- Blog Carosel ------------------------*/
+
+main .blog{
+    background: url('image/bg2.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+    height: 100vh;
+    width: 100%;
+}
+main .blog .blog-post{
+    padding-top: 1rem;
+}
+main .blog-post .blog-content{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 80%;
+    margin: 3rem 2rem;
+    box-shadow: 0 15px 20px rgba(0,0,0,0.2);
+    overflow: hidden;
+}
+main .blog-content .blog-title{
+    padding: 1rem 0;
+    background-image: linear-gradient(to right, rgba(201, 98, 98, 9), rgb(255, 255, 255));
+    position: relative
+}
+main .blog-content .blog-title h3{
+    margin: -7px 0px 15px 0;
+    text-shadow: 4px 6px 5px rgba(243, 232, 232, 0.9);
+    font-size: 20px;
+}
+main .blog-content .btn-blog{
+    padding: .7rem 2rem;
+    background: #088178;
+    margin: .5rem;
+    transition: 0.5s;
+}
+main .blog-content .btn-blog:hover{
+    transform: scale(1.2);
+}
+main .blog-content span{
+    display: block;
+}
+main .blog-content img{
+    transition: 0.5s;
+}
+main .blog-content img:hover{
+    transform: scale(1.2);
+}
+section .container .owl-nav{
+    width: 100%;
+    bottom: -5%;
+    margin: 0 auto;
+    position: absolute;
+}
+.owl-nav .owl-prev .owl-nav-prev,
+.owl-nav .owl-next .owl-nav-next{
+    color: red;
+    background: transparent;
+    font-size: 2rem;
+    transition: 0.5s;
+}
+.owl-theme .owl-nav [class*='owl-']:hover{
+    color: #088178;
+    background: transparent;
+    transform: scale(1.2);
+}
+
+/*------------X---------- Blog Carosel -----------X-------------*/
+
+/*------------------------ side content ------------------------*/
+
+main .site-content{
+    display: grid;
+    margin-top: 50px;
+    grid-template-columns: 70% 30%;  /* side content= 70% & sidebar= 30% */
+}
+main .post-content{
+    width: 100%;
+}
+main .site-content .post-content> .post-image, .post-title{
+    padding: 1rem 2rem;
+    position: relative;
+}
+main .site-content .post-content>  .post-image .post-info{
+    background: #7ec6c9;
+    padding: 0.5rem;
+    position: absolute;
+    bottom: 0%;
+    left: 20vw;
+    border-radius: 2rem;
+}
+main .site-content .post-content>.post-image> div{
+    overflow: hidden;
+}
+main .site-content .post-content>.post-image .img{
+    width: 100%;
+    height: 400px;
+    transition: all 1s ease;
+    cursor: pointer;
+}
+main .site-content .post-content>.post-image .img:hover{
+    transform: scale(1.2);
+}
+main .site-content .post-content>.post-image .post-info span{
+    margin: 0.5rem;
+}
+main .post-content .post-title a{
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 1.7rem;
+    color: rgb(66, 61, 61);
+}
+.site-content .post-content .post-title .post-btn{
+    padding: 0.7rem 1.5rem;
+    border-radius: 0;
+    transition: .5s;
+}
+.site-content .post-content .post-title .post-btn:hover{
+    transform: scale(1.1);
+}
+ /****************** Pagination *************************/
+
+ .site-content .pagination{
+    justify-content: center;
+    color: gray;
+    margin: 4rem 0;
+ }
+ .site-content .pagination a{
+    padding: 0.6rem 0.9rem;
+    border-radius: 2rem;
+    margin: 0 0.3rem;
+ }
+ .site-content .pagination .pages{
+    background-color: #088178;
+    color: white;
+    transition: .4s;
+ }
+ .site-content .pagination .pages:hover{
+    transform: scale(1.1);
+ }
+
+/*-------------X----------- side content -----------X-------------*/
+
+/*------------------------- Sidebar -----------------------------*/
+
+.site-content> .sidebar .category-list{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.category h2{
+    font-weight: 800;
+    font-size: 35px;
+}
+.site-content> .sidebar .category-list .list-items{
+    background-image: linear-gradient(to right, rgb(132, 222, 131), rgb(96, 188, 168));
+    padding: 0.4rem 1rem;
+    margin: 0.8rem 0;
+    border-radius: 3rem;
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+}
+.site-content> .sidebar .category-list .list-items a{
+    color: black;
+}
+.site-content .sidebar .popular-post .post-content{
+    padding: 1rem 0;
+}
+.site-content .sidebar .popular-post h2{
+    padding-top: 8rem;
+    font-weight: 800;
+    font-size: 35px;
+}
+.site-content .sidebar .popular-post .post-info{
+    padding: 0.4rem 0.1rem !important;
+    bottom: 0rem !important;
+    left: 1.5rem !important;
+    border-radius: 0rem !important;
+    background: rgb(255, 255, 255) !important;
+}
+.site-content .sidebar .popular-post .post-title a{
+    font-size: 1.2rem;
+}
+.site-content .sidebar .popular-post .post-image img{
+    height: 280px;
+}
+.site-content .sidebar .newsletter{
+    padding-top: 3rem;
+}
+.site-content .sidebar .newsletter .form-element{
+    padding: 0.5rem 2rem;
+    display: flex;
+}
+.site-content .sidebar .newsletter .input-element{
+    width: 75%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    font-size: 1rem;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-bottom-left-radius: 4px;
+    border-top-left-radius: 4px;
+}
+.site-content .sidebar .newsletter .form-btn{
+    width: 39%;
+    font-size: 1rem;
+    padding: 12px 0px;
+    margin: 8px 0;
+    border: 1px solid gray;
+    border-bottom-right-radius: 4px;
+    border-top-right-radius: 4px;
+    border-bottom-left-radius: 0;
+    border-top-left-radius: 0;
+    transition: 0.5s;
+}
+.site-content .sidebar .newsletter .form-btn:hover{
+    background: transparent;
+    color: black;
+    border: 1px solid gray;
+}
+.site-content .sidebar .popular-tag{
+    padding: 4rem 0;
+}
+.site-content .sidebar .popular-tag .tags .tag{
+    background-image: linear-gradient(to right, rgb(132, 222, 131), rgb(96, 188, 168));
+    padding: 0.4rem 1rem;
+    border-radius: 3rem;
+    margin: 0.3rem 0.4rem;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.site-content .sidebar .popular-tag .tags .tag:hover{
+    transform: scale(1.2);
+}
+
+/*------------------------- Sidebar -----------------------------*/
+    /* ------------X----------- Main content ----------X------------*/
+
+    /* -------------------------- Footer ------------------------*/
+
+footer.footer{
+    height: 100%;
+    background-color: black;
+    position: relative;
+}
+footer.footer .container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);  /* 1fr 1fr 1fr 1fr; /*  same of all 25% 25% 25% 25%; */
+}
+footer.footer .container> div{
+    flex-grow: 1;
+    flex-basis: 0;
+    padding: 3rem .9rem;
+}
+footer.footer .container h2{
+    color: white;
+}
+footer.footer .container p{
+    color: #636565;
+}
+footer.footer .newsletter .form-element{
+    padding: 0.5rem 0rem;
+    display: flex; 
+}
+footer.footer .form-element .input-element{
+    width: 70%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    font-size: 1rem;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-bottom-left-radius: 4px;
+    border-top-left-radius: 4px;
+    background: #0d1010;
+}
+footer.footer .form-element .form-btn{
+    width: 35%;
+    font-size: 1rem;
+    padding: 12px 0px;
+    margin: 8px 0;
+    border: 1px solid gray;
+    border-bottom-right-radius: 4px;
+    border-top-right-radius: 4px;
+    border-bottom-left-radius: 0;
+    border-top-left-radius: 0;
+}
+footer.footer .form-element .form-btn:hover{
+    background: transparent;
+    color: rgb(105, 90, 90);
+    border: 1px solid gray;
+}
+.social .links{
+    display:grid;
+    margin-top: -20px;
+    margin-left: 35px;
+}
+.social .links span{
+    font-size: 26px;
+    color: rgb(9, 151, 52);
+}
+.social .links a{
+    text-decoration: none;
+    color: #088178;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    transition: .5s;
+}
+.social .links a:hover{
+    transform: scale(1.2);
+}
+footer.footer .follow div i{
+    color: white;
+    padding: 0 0.4rem;
+    color: #ed5e7f;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+footer.footer .follow div i:hover{
+    transform: scale(1.3);
+}
+.rights{
+    justify-content: center;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.rights .text-gray span{
+    color: red;
+}
+footer.footer .move-up{
+    position: fixed;
+    right: 3%;
+    bottom: 3%;
+}
+footer.footer .move-up span i{
+    color: #535251;
+    transition: 0.4s;
+    cursor: pointer;
+}
+footer.footer .move-up span i:hover{
+    transform: scale(1.2);
+}
+
+
+
+    /* --------------X------------ Footer --------------X----------*/
+
+    /* ---------------- Viewport less than or equal 1130px -----------------*/
+
+@media only screen and (max-width: 1130px){
+.site-content .post-content> .post-image .post-info{
+    left: 2rem !important;
+    bottom: 1.2rem !important;
+    border-radius: 0% !important;
+}
+.site-content .sidebar .popular-post .post-info{
+    display: none !important;
+}
+footer.footer .container{
+    grid-template-columns: repeat(2, 1fr);
+}
+    }
+    /* --------X-------- Viewport less than or equal 1130px --------X---------*/
+
+        /* ------ Viewport less than or equal 780px -----------------*/
+
+@media only screen and (max-width: 780px){
+    .nav .nav-menu, .nav .nav-items{
+        flex-direction: column;
+    }
+    .nav .toggle-collapse{
+        display: initial;
+    }
+    main .site-content{
+        grid-template-columns: 100%;
+    }
+    footer.footer .container{
+        grid-template-columns:repeat(1, 1fr); /* same of 100% */
+    }
+    .site-content .sidebar .popular-post .post-image img{
+        height: 380px;
+    }
+}
+/* --------X------- Viewport less than or equal 780px -------X----------*/
+
+/********************* Mobile Responsive ******************************/
+
+@media only screen and (max-width: 499px){
+    main .site-title {
+        background: url('image/banner4.jpg');
+        background-size: cover;
+        height: 80vh;
+    }
+    main .site-title .site-background {
+        padding-top: 7rem;
+    }
+    main .blog-content .btn-blog {
+        padding: .5rem 1.7rem;
+        margin: .3rem;
+    }
+    main .blog{
+        height: 110vh;
+    }
+    .site-content .post-content> .post-image .post-info{
+        display: none;
+    }
+    .footer .container> div{
+        padding: 1rem 0.9rem;
+    }
+    footer .rights h4{
+       font-size: 12px;
+    }
+    nav .toggle-collaps{
+        width: 80% !important;
+    }
+    main .site-content .post-content>.post-image .img {
+        height: 40%;
+    }
+}
+
+
+/***********X********** Mobile Responsive *****************X*************/
+
+         
